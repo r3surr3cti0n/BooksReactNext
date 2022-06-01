@@ -1,0 +1,25 @@
+.book_complete {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3em;
+}
+
+.book_details {
+	flex: 3;
+}
+
+.book_desc {
+	font-weight: 100;
+	font-size: 1.2em;
+	margin: 0.8em 0;
+}
+
+.editLink {
+	color: black;
+	font-size: 1.2em;
+}
+
+.editLink:hover {
+	opacity: 0.7;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap");
+
+:root {
+	--max-width: 1440px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	font-family: "Tiro Devanagari Sanskrit", serif;
+}
+
+body,
+#shared_layout {
+	min-height: 100vh;
+}
+
+#shared_layout {
+	margin: 0 auto;
+	max-width: var(--max-width);
+	border-left: 2px solid #817c814d;
+	border-right: 2px solid #817c814d;
+}
+
+.backHomeLink {
+	text-decoration: none;
+	font-style: italic;
+	color: black;
+	margin: 1em 0;
+	max-width: fit-content;
+}
+
+.backHomeLink:hover {
+	text-decoration: underline;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	padding: 0 4em;
+}
+
+#books {
+	display: flex;
+	gap: 1em;
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #817c814d;
+	padding: 1.8em 2em;
+	border-radius: 0.4em;
+}
+
+.title {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.book_title,
+.book_author {
+	font-weight: 400;
+}
+
+.book_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.book_author {
+	font-size: 1.15em;
+	color: rgb(148, 142, 142);
+	padding-left: 5px;
+}
+
+.book_cover {
+	align-self: center;
+	padding: 1em;
+}
+
+.book_cover img {
+	border-radius: 0.4em;
+	max-height: 20em;
+}
