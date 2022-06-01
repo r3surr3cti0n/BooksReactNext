@@ -7,7 +7,7 @@ import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const BookPage = ({ book }) => {
-	const { id, author, title, cover, description } = book[0];
+	const { id, author, title, cover, description } = book[0] || {};
 
 	return (
 		<SharedLayout>
@@ -15,14 +15,14 @@ const BookPage = ({ book }) => {
 				<Image
 					className={styles.book_img}
 					src={"/img/" + cover}
-					alt={"../images/" + cover}
+					alt={cover || " "}
 					width={350}
 					height={450}
 				/>
 				<div className={styles.book_details}>
 					<div className="book_title">
 						<h1>{title}</h1>
-						<Link href={`/book/${id}/edit`} >
+						<Link href={`/book/${id}/edit`}>
 							<a className={styles.editLink} title="Szerkeszt">
 								<FontAwesomeIcon icon={faEdit} />
 							</a>

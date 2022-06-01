@@ -5,9 +5,7 @@ const getAllBookIds = async () => {
 	const res = await fetch(API_URL).then((res) => res.json());
 	const books = res.map((book) => {
 		return {
-			params: {
-				id: book.id.toString(),
-			},
+			id: book.id.toString(),
 		};
 	});
 
