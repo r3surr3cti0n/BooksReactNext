@@ -1,0 +1,69 @@
+#form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.book_complete {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3em;
+}
+.book_details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	gap: 1em;
+}
+
+.book_desc {
+	height: 100%;
+	resize: none;
+}
+
+.book_title,
+.book_author,
+.book_desc {
+	font-family: "Tiro Devanagari Sanskrit", serif;
+	padding: 0.4em;
+	border: 1px solid black;
+}
+
+.book_title:focus,
+.book_author:focus,
+.book_desc:focus {
+	outline: 3px solid var(--gray);
+}
+
+.book_title {
+	font-size: var(--title);
+	font-weight: bold;
+}
+
+.book_author {
+	font-size: var(--sub-title);
+	color: var(--pale-orange);
+}
+
+.book_desc {
+	font-weight: medium;
+}
+
+.submitBtn {
+	background: none;
+	border: 1px solid black;
+	cursor: pointer;
+	align-self: flex-end;
+	padding: 0.8em 1.8em;
+	font-size: var(--sub-title);
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.inputErr,
+.inputErr:focus {
+	border: 2px solid rgba(255, 0, 0, 0.5);
+	outline: 3px solid rgba(255, 0, 0, 0.137);
+	background-color: rgba(255, 0, 0, 0.137);
+}
