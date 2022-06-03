@@ -1,8 +1,6 @@
-import next from "next";
-import { redirect } from "next/dist/server/api-utils";
 import { useRouter } from "next/router";
 import BookPage from "../../components/BookPage";
-import { API_URL, getAllBookIds } from "../../helper";
+import { API_URL_GET, getAllBookIds } from "../../helper";
 
 const Book = ({ book }) => {
 	const router = useRouter();
@@ -23,7 +21,7 @@ export async function getServerSideProps(context) {
 		};
 	}
 
-	const res = await fetch(API_URL + "/" + context.query.id);
+	const res = await fetch(API_URL_GET + "/" + context.query.id);
 	const book = await res.json();
 
 	return {
