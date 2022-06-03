@@ -61,6 +61,7 @@ body,
 	gap: 1em;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding: 2em 0;
 }
 
 .book {
