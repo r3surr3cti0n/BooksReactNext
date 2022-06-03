@@ -1,0 +1,30 @@
+.feedback {
+	align-self: flex-end;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 1em;
+	border: 1px solid black;
+	padding: 1em 1.6em;
+	border-radius: 0.4em;
+	transition: all 0.4s ease-in-out;
+}
+
+.feedbackMessage {
+	position: relative;
+}
+
+.closedFeedback {
+    top: 0;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.closeIcon {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	padding: 0.4em;
+	right: 0em;
+	top: 0em;
+}
