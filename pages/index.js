@@ -1,6 +1,6 @@
 import React from "react";
 import Book from "../components/SingleBook";
-import { API_URL } from "../helper";
+import { API_URL_GET } from "../helper";
 import SharedLayout from "../components/SharedLayout";
 
 export default function Home({ books }) {
@@ -17,7 +17,7 @@ export default function Home({ books }) {
 
 // Get all books
 export async function getStaticProps() {
-	const res = await fetch(API_URL);
+	const res = await fetch(API_URL_GET);
 	const books = await res.json();
 
 	return {
