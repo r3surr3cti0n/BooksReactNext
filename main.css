@@ -43,7 +43,7 @@ body,
 	color: black;
 	/* margin-bottom: 2em; */
 	max-width: fit-content;
-	padding: 1em 2em;
+	padding: 1em 0 1em 0;
 }
 
 .backLink:hover {
@@ -53,7 +53,7 @@ body,
 #main {
 	display: flex;
 	flex-direction: column;
-	padding: 0 4em;
+	padding: 0 5vw;
 }
 
 #books {
