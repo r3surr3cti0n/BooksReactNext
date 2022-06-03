@@ -1,17 +1,27 @@
 .book_complete {
 	width: 100%;
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	gap: 3em;
 }
 
 .book_details {
-	flex: 3;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.book_title {
+	font-size: var(--sub-title);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .book_desc {
-	font-weight: 100;
-	font-size: 1.2em;
+	font-weight: var(--light-wght);
+	font-size: var(--sub-title);
 	margin: 0.8em 0;
 }
 

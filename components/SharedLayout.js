@@ -12,12 +12,12 @@ const SharedLayout = ({ children, isHome }) => {
 			</Head>
 
 			<header>
-				<h2 className="title">My Library</h2>
+				<h1 className="title">My Library</h1>
 			</header>
 			<main id="main">
 				{!isHome && (
 					<Link href="/">
-						<a className="backHomeLink">
+						<a className="backLink">
 							<FontAwesomeIcon
 								style={{ paddingRight: "5px" }}
 								icon={faArrowLeftLong}
